@@ -1,0 +1,19 @@
+
+All: comparaison_multip statistiques
+
+statistiques.o: statistiques.c
+	gcc -Wall -c statistiques.c -I/usr/local/include/flint -L/usr/loc\
+al/lib -lgmp -lflint -lm -fopenmp
+
+statistiques: statistiques.o
+	gcc -Wall -o statistiques statistiques.o -lgmp -lflint -lm \
+-fopenmp
+
+comparaison_multip.o: comparaison_multip.c
+	gcc -Wall -c comparaison_multip.c -I/usr/local/include/flint -L/usr/local/lib -lgmp -lflint -lm -fopenmp
+
+comparaison_multip: comparaison_multip.o
+	gcc -Wall -o comparaison_multip comparaison_multip.o -lgmp -lflint -lm -fopenmp
+
+clear:
+	rm *.o

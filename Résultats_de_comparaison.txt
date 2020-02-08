@@ -1,0 +1,96 @@
+degré 500 Coeff 50:
+mul: 2.770256 
+mul_classical: 2.636161 
+mullow_classical: 2.627309 
+mulhigh_classical: 2.635179
+mul_karatsuba: 35.866273
+mullow_karatsuba_n: 80.291182 
+mullow: 2.792773
+mulhigh: 2.834941 
+
+
+Test 2:
+mul: 3.210415 
+mul_classical: 89.134160 
+mullow_classical: 89.748610 
+mulhigh_classical: 89.192221
+mul_karatsuba: 63.579465
+mullow_karatsuba_n: 141.927230 
+mullow: 3.256820
+mulhigh: 3.303791 
+ 
+degré 500 56
+mul: 3.565247 
+mul_classical: 92.652998 
+mullow_classical: 92.285456 
+mulhigh_classical: 92.104559
+mul_karatsuba: 63.890217
+mullow_karatsuba_n: 145.290525 
+mullow: 3.705675
+mulhigh: 3.669658 
+
+degré 500 nb_bits 120
+mul: 2.767283 
+mul_classical: 2.637460 
+mullow_classical: 2.627887 
+mulhigh_classical: 2.634549
+mul_karatsuba: 35.610890
+mullow_karatsuba_n: 80.201306 
+mullow: 2.788683
+mulhigh: 2.853777 
+
+degré 500 nb_bits :: 200
+mul: 14.804108 
+mul_classical: 183.142434 
+mullow_classical: 182.812256 
+mulhigh_classical: 184.449361
+mul_karatsuba: 112.664812
+mullow_karatsuba_n: 241.212072 
+mullow: 15.457121
+mulhigh: 15.487269 
+
+degré 500 nb_bits :: 300
+mul: 20.154394 
+mul_classical: 217.033165 
+mullow_classical: 216.262750 
+mulhigh_classical: 216.725784
+mul_karatsuba: 121.397339
+mullow_karatsuba_n: 260.752487 
+mullow: 19.966816
+mulhigh: 19.735408 
+
+degré 1000 nb_bits_max: 56
+mul: 8.708247 
+mul_classical: 373.032931 
+mullow_classical: 375.934052 
+mulhigh_classical: 372.833595
+mul_karatsuba: 191.765829
+mullow_karatsuba_n: 430.739186 
+mullow: 9.077065
+mulhigh: 9.083390 
+
+
+degré 1000 nb_bits_max: 70
+mul: 11.155516 
+mul_classical: 429.470475 
+mullow_classical: 427.804916 
+mulhigh_classical: 427.424944
+mul_karatsuba: 280.280689
+mullow_karatsuba_n: 609.244580 
+mullow: 11.592027
+mulhigh: 11.661236 
+
+ Karatsuba 
+classical
+mul ss
+degré 2000 nb_bits_max: 90
+mul SS: 34.833208 
+mul_classical: 2169.214299 
+mullow_classical: 2119.556227 
+mulhigh_classical: 2118.764348
+mul_karatsuba: 785.003485
+mullow_karatsuba_n: 1719.966582 
+mullow: 37.001314
+mulhigh: 37.164905 
+
+

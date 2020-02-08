@@ -1,0 +1,21 @@
+GCC_FLAGS = -Wall
+
+all: interpolation create_fich
+
+interpolation: interpolation.o
+	gcc $(GCC_FLAGS) -o interpolation interpolation.o -I/usr/local/include/flint  -L/usr/local/lib -lflint -lgmp -lm
+
+create_fich: create_fich.o
+	gcc $(GCC_FLAGS) -o create_fich create_fich.o -I/usr/local/include/flint  -L/usr/local/lib -lflint -lgmp -lm
+
+interpolation.o: interpolation.c
+		gcc $(GCC_FLAGS)  -c interpolation.c  -I/usr/local/include/flint  -L/usr/local/lib -lflint -lgmp -lm
+
+create_fich.o: create_fich.c
+		gcc $(GCC_FLAGS)  -c create_fich.c  -I/usr/local/include/flint  -L/usr/local/lib -lflint -lgmp -lm
+
+clean:
+	rm -rf *.o
+
+mrproper: clean
+	rm -rf interpolation create_fich
